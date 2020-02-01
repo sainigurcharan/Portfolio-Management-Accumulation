@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Investment Portfolio</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="{{ url_for('static', filename='css/sb-admin.css') }}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <form method="POST" action="/">
+
+    <div id="wrapper">
+
+      <div id="content-wrapper">
+        
+        <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb" style="background-color: #337ab7;">
+            <li class="breadcrumb-item">
+              <h3 style="color: #ffffff;">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                About Project
+              </h3>
+            </li>
+              <li class="breadcrumb-item top-right"><a class="btn btn-large btn-info" href="/" style="background-color: #337ab7;">Dashboard</a></li>
+          </ol>
+
+            <div class="row">
+
+                <div class="col-lg-3">
+                  <div class="card mb-3">
+                      <div class="card-header" style="color: #ffffff;background-color: #337ab7;">
+                          <div class="social-icons">
+                              <a href="https://github.com/adevkota01" target="_blank">
+                                <i class="fab fa-github" style="color: #ffffff;background-color: #337ab7;"></i>
+                              </a>
+                              <b>&nbsp;Aalok Devkota</b>
+                          </div>
+                      </div>
+                      <div class="card-body" align="center">
+                          <img alt="picture" src="https://ca.slack-edge.com/TKMU1FD24-UM03S3AH5-109f34bee2d3-512" class="w-50 img-fluid">
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card mb-3">
+                      <div class="card-header" style="color: #ffffff;background-color: #337ab7;">
+                          <div class="social-icons">
+                              <a href="https://github.com/hmars333" target="_blank">
+                                <i class="fab fa-github" style="color: #ffffff;background-color: #337ab7;"></i>
+                              </a>
+                              <b>&nbsp;Heather Marshall</b>
+                          </div>
+                      </div>
+                      <div class="card-body" align="center">
+                          <img alt="picture" src="https://ca.slack-edge.com/TKMU1FD24-ULLRJ2SGJ-def614c7cd09-512" class="w-50 img-fluid" />
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card mb-3">
+                      <div class="card-header" style="color: #ffffff;background-color: #337ab7;">
+                          <div class="social-icons">
+                              <a href="https://github.com/sainigurcharan" target="_blank">
+                                <i class="fab fa-github" style="color: #ffffff;background-color: #337ab7;"></i>
+                              </a>
+                              <b>&nbsp;Gurcharan Singh</b>
+                          </div>
+                      </div>
+                      <div class="card-body" align="center">
+                          <img alt="picture" src="https://ca.slack-edge.com/TKMU1FD24-ULLRDLMFU-ba92e8576c28-512" class="w-50 img-fluid" />
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card mb-3">
+                      <div class="card-header" style="color: #ffffff;background-color: #337ab7;">
+                          <div class="social-icons">
+                              <a href="https://github.com/SWL-DEV" target="_blank">
+                                <i class="fab fa-github" style="color: #ffffff;background-color: #337ab7;"></i>
+                              </a>
+                              <b>&nbsp;Stephanie Lin</b>
+                          </div>
+                      </div>
+                      <div class="card-body" align="center">
+                          <img alt="picture" src="https://ca.slack-edge.com/TKMU1FD24-ULLRULFS7-e67b7808a282-512" class="w-50 img-fluid" />
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                  <div class="card mb-3">
+                      <div class="card-header" style="color: #ffffff;background-color: #337ab7;"><b>About</b></div>
+                      <div class="card-body">
+                          <p>
+                          <p>We have created an investment dashboard which will serve as a self-service tool for calculating investment returns based on Market volatility.</p>
+                          <p>The investment dashboard provides the likely outcome of an investment based on the client’s current portfolio value, periodic deposits to the portfolio, total time invested, and the type of portfolio chosen.</p>
+                          <p>Currently the calculators that are available online make those forecast based on average returns only. One thing we know is that market returns are never uniform, often times the actual return is significantly different from the average return.</p>
+                          <p>Our goal is to provide users with a better calculator that takes volatility into consideration. We use both mean and volatility to identify the possible outcomes and show the user the normal-case and worst-case outcomes so that they can decide on the correct portfolio.</p>
+                          <p>For this purpose, we have created 5 portfolios based on some combination of stocks and bonds. The 5 portfolios and stock/bonds weights are as following:</p>
+
+                          <ul>
+                              <li>
+                                  Very Aggressive: 100% in SPY (Stocks)
+                              </li>
+                              <li>
+                                  Aggressive: 80% in SPY (Stocks) and 20% in VBMFX (Bonds)
+                              </li>
+                              <li>
+                                  Moderate: 50% in SPY (Stocks) and 50% in VBMFX (Bonds)
+                              </li>
+                              <li>
+                                  Conservative: 20% in SPY (Stocks) and 80% in VBMFX (Bonds)
+                              </li>
+                              <li>
+                                  Very Conservative: 100% in VBMFX (Bonds)
+                              </li>
+                          </ul>
+                            <p>We also ran a Monte Carlo simulation for 1000 times to get the possible portfolio outcomes.</p>
+
+                          </p>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+
+         <!-- Sticky Footer -->
+          <ol class="breadcrumb" style="background-color: #337ab7;">
+            <li class="breadcrumb-item">
+              <h6 style="color: #ffffff;">
+                <span>© 2020</span>
+              </h6>
+            </li>
+          </ol>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Plot scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="{{ url_for('static', filename='./js/validation.js') }}"></script>
+    <!-- Main script file to load charts with sample data -->
+    <script src="{{ url_for('static', filename='./static/js/app.js') }}"></script>
+
+
+  </form>
+</body>
+
+</html>
